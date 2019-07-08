@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validator</title>
+</head>
+<body>
+    <form class="form" action="" method="post">
+        <div class="form-row">
+            <label for="form-name">Name</label>
+            <input type="text" id="form-name" placeholder="" required>
+        </div>
+        <div class="form-row">
+            <label for="form-surname">Surname</label>
+            <input type="text" id="form-surname" placeholder="" required>
+        </div>
+        <div class="form-row">
+            <label for="form-birth-date"">Birth date</label>
+            <input type="text" id="form-birth-date" placeholder="rrrr-mm-dd" required>
+        </div>
+        <div class="form-row">
+            <label for="form-phone-number"">Phone number</label>
+            <input type="text" id="form-phone-number" placeholder="" required>
+        </div>
+        <div class="form-row">
+            <label for="form-post-code"">Post code</label>
+            <input type="text" id="form-post-code" placeholder="00-000" required>
+        </div>
+        <div class="form-row">
+            <label for="form-sex"">Province</label>
+            <select>
+                <option value="">Choose</option>
+                <option value="Podlaskie">Podlaskie</option>
+            </select>
+        </div>
+
+        <fieldset class="form-row">
+            <label for="form-sex"">Sex</label>
+            <input type="radio" name="Male" required> Male
+            <input type="radio" name="Female" required> Female
+        </fieldset>
+        <fieldset class="form-row">
+            <label for="form-hobby"">Hobby</label>
+            <input type="checkbox" name="coding" required> coding
+            <input type="checkbox" name="programming" required> programming
+        </fieldset>
+
+    </form>
+</body>
+</html>
