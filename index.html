@@ -19,11 +19,11 @@
         </div>
         <div class="form-row">
             <label class="label" for="form-birth-date"">Birth date</label>
-            <input  class="custom-input"type="text" id="form-birth-date" placeholder="rrrr-mm-dd" required>
+            <input  class="custom-input"type="text" id="form-birth-date" pattern="^\d{4}\-\d{2}\-\d{2}$" placeholder="rrrr-mm-dd" required>
         </div>
         <div class="form-row">
             <label class="label" for="form-phone-number"">Phone number</label>
-            <input  class="custom-input"type="text" id="form-phone-number" placeholder="" required>
+            <input  class="custom-input"type="text" id="form-phone-number" pattern="^\d{9}$" placeholder="" required>
         </div>
         <div class="form-row">
                 <label class="label" for="form-email"">Email</label>
@@ -31,7 +31,7 @@
             </div>
         <div class="form-row">
             <label class="label" for="form-post-code"">Post code</label>
-            <input  class="custom-input"type="text" id="form-post-code" placeholder="xx-xxx" required>
+            <input  class="custom-input"type="text" id="form-post-code" pattern="^\d{2}\-\d{3}$" placeholder="xx-xxx" required>
         </div>
         <div class="form-row">
             <label class="label" for="form-sex"">Province</label>
