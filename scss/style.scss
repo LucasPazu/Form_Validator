@@ -1,0 +1,52 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: inherit;
+    background-color: rgb(226, 216, 216);
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+.form:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+
+    border: none;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .label {
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+
+    .input-box {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+
+        span {
+            margin-left: 1rem;
+        }
+    }
+
+    .submit-btn {
+        width: 10rem;
+        cursor: pointer;
+    }
+}
+

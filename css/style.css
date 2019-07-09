@@ -1,0 +1,35 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  box-sizing: inherit;
+  background-color: #e2d8d8;
+  font-size: 2rem;
+  margin-left: 3rem; }
+
+.form:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  border: none; }
+  .form-row:not(:last-child) {
+    margin-bottom: 1rem; }
+  .form-row .label {
+    margin-bottom: .5rem;
+    font-weight: bold; }
+  .form-row .input-box {
+    display: flex;
+    align-items: center; }
+    .form-row .input-box:not(:last-child) {
+      margin-bottom: .5rem; }
+    .form-row .input-box span {
+      margin-left: 1rem; }
+  .form-row .submit-btn {
+    width: 10rem;
+    cursor: pointer; }
