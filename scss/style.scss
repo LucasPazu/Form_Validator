@@ -87,6 +87,21 @@ body {
         }
     }
     
+    .submit-btn {
+        margin-left: 1.5rem;
+        padding: 1rem 1.5rem;
+        border: 1px solid aliceblue;
+        background-color: rgb(59, 53, 53);
+        border-radius: 1rem;
+        color: aliceblue;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(95, 86, 86);
+        }
+    }
+
+    
 
 }
 

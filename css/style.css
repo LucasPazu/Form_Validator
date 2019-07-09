@@ -64,3 +64,13 @@ body {
     @media (max-width: 1000px) {
       .form .right {
         margin-left: 0; } }
+  .form .submit-btn {
+    margin-left: 1.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid aliceblue;
+    background-color: #3b3535;
+    border-radius: 1rem;
+    color: aliceblue; }
+    .form .submit-btn:hover {
+      cursor: pointer;
+      background-color: #5f5656; }
