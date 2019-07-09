@@ -6,30 +6,61 @@ html {
 
 body {
   box-sizing: inherit;
-  background-color: #e2d8d8;
-  font-size: 2rem;
-  margin-left: 3rem; }
+  background-color: #2b2727;
+  font-size: 2rem; }
 
-.form:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form-row {
+.form {
   display: flex;
-  flex-direction: column;
-  width: 40rem;
-  border: none; }
-  .form-row:not(:last-child) {
-    margin-bottom: 1rem; }
-  .form-row .label {
-    margin-bottom: .5rem;
-    font-weight: bold; }
-  .form-row .input-box {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin: 5rem auto;
+  color: aliceblue; }
+  @media (max-width: 1000px) {
+    .form {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center; } }
+  @media (max-width: 1600px) {
+    .form {
+      width: 100%; } }
+  .form .form-basic-info {
     display: flex;
-    align-items: center; }
-    .form-row .input-box:not(:last-child) {
-      margin-bottom: .5rem; }
-    .form-row .input-box span {
-      margin-left: 1rem; }
-  .form-row .submit-btn {
-    width: 10rem;
-    cursor: pointer; }
+    flex-direction: column; }
+    @media (max-width: 1000px) {
+      .form .form-basic-info {
+        align-items: left; } }
+    .form .form-basic-info .custom-input {
+      width: 40rem;
+      line-height: 2;
+      font-size: 2rem;
+      padding: .5rem .5rem;
+      outline: none;
+      border: 1.5px solid aliceblue;
+      background-color: #333030;
+      border-radius: 1rem;
+      color: aliceblue; }
+      @media (max-width: 1000px) {
+        .form .form-basic-info .custom-input {
+          width: 30rem; } }
+      .form .form-basic-info .custom-input:not(:last-child) {
+        margin-bottom: 1rem; }
+    .form .form-basic-info .custom-select {
+      width: 41.5rem; }
+      @media (max-width: 1000px) {
+        .form .form-basic-info .custom-select {
+          width: 31.5rem; } }
+    .form .form-basic-info .form-row {
+      margin-bottom: 2rem; }
+    .form .form-basic-info .form-box {
+      border: none; }
+      @media (max-width: 1000px) {
+        .form .form-basic-info .form-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; } }
+  .form .right {
+    margin-left: 10rem; }
+    @media (max-width: 1000px) {
+      .form .right {
+        margin-left: 0; } }

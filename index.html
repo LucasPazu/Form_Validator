@@ -9,64 +9,63 @@
 </head>
 <body>
     <form class="form" action="" method="post">
-        <div class="form-row">
-            <label class="label" for="form-name">Name</label>
-            <input  class="custom-input"type="text" id="form-name" placeholder="" required>
-        </div>
-        <div class="form-row">
-            <label class="label" for="form-surname">Surname</label>
-            <input  class="custom-input"type="text" id="form-surname" placeholder="" required>
-        </div>
-        <div class="form-row">
-            <label class="label" for="form-birth-date"">Birth date</label>
-            <input  class="custom-input"type="text" id="form-birth-date" pattern="^\d{4}\-\d{2}\-\d{2}$" placeholder="rrrr-mm-dd" required>
-        </div>
-        <div class="form-row">
-            <label class="label" for="form-phone-number"">Phone number</label>
-            <input  class="custom-input"type="text" id="form-phone-number" pattern="^\d{9}$" placeholder="" required>
-        </div>
-        <div class="form-row">
-                <label class="label" for="form-email"">Email</label>
-                <input  class="custom-input"type="email" id="form-email" placeholder="" required>
+
+        <div class="form-basic-info left">
+            <div class="form-row">
+                <input  class="custom-input"type="text" id="form-name" placeholder="name" required>
             </div>
-        <div class="form-row">
-            <label class="label" for="form-post-code"">Post code</label>
-            <input  class="custom-input"type="text" id="form-post-code" pattern="^\d{2}\-\d{3}$" placeholder="xx-xxx" required>
-        </div>
-        <div class="form-row">
-            <label class="label" for="form-sex"">Province</label>
-            <select class="custom-input">
-                <option value="">Choose</option>
-                <option value="Podlaskie">Podlaskie</option>
-            </select>
+            <div class="form-row">
+                <input  class="custom-input"type="text" id="form-surname" placeholder="surname" required>
+            </div>
+            <div class="form-row">
+                <input  class="custom-input"type="text" id="form-birth-date" pattern="^\d{4}\-\d{2}\-\d{2}$" placeholder="birth date(rrrr-mm-dd)" required>
+            </div>
+            <div class="form-row">
+                <input  class="custom-input"type="text" id="form-phone-number" pattern="^\d{9}$" placeholder="phine number" required>
+            </div>
+            <div class="form-row">
+                <input  class="custom-input"type="email" id="form-email" placeholder="email" required>
+            </div>
         </div>
 
-        <fieldset class="form-row">
-            <label class="label" for="form-sex"">Sex</label>
-            <div class="input-box">
-                <input type="radio" name="sex" value="male" required>
-                <span>male</span>
+        <div class="form-basic-info right">
+            <div class="form-row">
+                <input  class="custom-input"type="text" id="form-post-code" pattern="^\d{2}\-\d{3}$" placeholder="post code(xx-xxx)" required>
             </div>
-            <div class="input-box">
-                <input type="radio" name="sex" value="female"required>
-                <span>female</span>
+            <div class="form-row">
+                <select class="custom-input custom-select">
+                    <option value="">choose province</option>
+                    <option value="Podlaskie">Podlaskie</option>
+                </select>
             </div>
-        </fieldset>
-        <fieldset class="form-row">
-            <label class="label" for="form-hobby"">Hobby</label>
-            <div class="input-box">
-                <input type="checkbox" name="coding" >
-                <span>coding</span>
-            </div>
-            <div class="input-box">
-                <input type="checkbox" name="programming" >
-                <span>programming</span>
-            </div>
-        </fieldset>
 
-        <div class="form-row">
-            <input class="submit-btn" type="submit" value="send">
+
+            <fieldset class="form-row form-box">
+                    <label class="label" for="form-sex"">Sex</label>
+                    <div class="input-box">
+                        <input type="radio" name="sex" value="male" required>
+                        <span>male</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="radio" name="sex" value="female"required>
+                        <span>female</span>
+                    </div>
+                </fieldset>
+
+            <fieldset class="form-row form-box">
+                <label class="label" for="form-hobby"">Hobby</label>
+                <div class="input-box">
+                    <input type="checkbox" name="coding" >
+                    <span>coding</span>
+                </div>
+                <div class="input-box">
+                    <input type="checkbox" name="programming" >
+                    <span>programming</span>
+                </div>
+            </fieldset>
         </div>
+
+
     </form>
 </body>
 </html>
