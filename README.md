@@ -1,1 +1,1 @@
-HTML, SCSS, JS form validator
+Very basic HTML, SCSS, JS form validator
