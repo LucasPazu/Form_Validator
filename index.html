@@ -8,32 +8,32 @@
     <title>Form Validator</title>
 </head>
 <body>
-    <form class="form" action="" method="post">
+    <form class="form" action="./submit.html" method="POST" onsubmit="return validate()">
 
         <div class="form-basic-info left">
             <div class="form-row">
-                <input  class="custom-input"type="text" id="form-name" placeholder="name" required>
+                <input  class="custom-input"type="text" id="form-name" placeholder="name">
             </div>
             <div class="form-row">
-                <input  class="custom-input"type="text" id="form-surname" placeholder="surname" required>
+                <input  class="custom-input"type="text" id="form-surname" placeholder="surname">
             </div>
             <div class="form-row">
-                <input  class="custom-input"type="text" id="form-birth-date" pattern="^\d{4}\-\d{2}\-\d{2}$" placeholder="birth date(rrrr-mm-dd)" required>
+                <input  class="custom-input"type="date" id="form-birth-date" min="1900-01-01">
             </div>
             <div class="form-row">
-                <input  class="custom-input"type="text" id="form-phone-number" pattern="^\d{9}$" placeholder="phone number" required>
+                <input  class="custom-input"type="text" id="form-phone-number" pattern="^\d{9}$" placeholder="phone number">
             </div>
             <div class="form-row">
-                <input  class="custom-input"type="email" id="form-email" placeholder="email" required>
+                <input  class="custom-input"type="email" id="form-email" placeholder="email">
             </div>
         </div>
 
         <div class="form-basic-info right">
             <div class="form-row">
-                <input  class="custom-input"type="text" id="form-post-code" pattern="^\d{2}\-\d{3}$" placeholder="post code(xx-xxx)" required>
+                <input  class="custom-input"type="text" id="form-post-code" pattern="^\d{2}\-\d{3}$" placeholder="post code(xx-xxx)" >
             </div>
             <div class="form-row">
-                <select class="custom-input custom-select">
+                <select class="custom-input custom-select" id="form-provice">
                     <option value="">choose province</option>
                     <option value="Podlaskie">Podlaskie</option>
                 </select>
@@ -43,11 +43,11 @@
             <fieldset class="form-row form-box">
                     <label class="label" for="form-sex"">Sex</label>
                     <div class="input-box">
-                        <input type="radio" name="sex" value="male" required>
+                        <input type="radio" name="sex" value="male">
                         <span>male</span>
                     </div>
                     <div class="input-box">
-                        <input type="radio" name="sex" value="female"required>
+                        <input type="radio" name="sex" value="female">
                         <span>female</span>
                     </div>
                 </fieldset>
@@ -65,7 +65,7 @@
             </fieldset>
         </div>
         <div>
-            <input type="submit" class="submit-btn" value="Submit">
+            <input type="submit" class="submit-btn" id="submit-btn"value="Submit">
         </div>
     </form>
 

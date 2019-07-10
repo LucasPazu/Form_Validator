@@ -22,7 +22,7 @@ body {
         align-items: center;
     }
 
-    width: 60%;
+    width: 100rem;
     @media (max-width: 1600px) {
         width: 100%;
     }
@@ -58,6 +58,10 @@ body {
             }
         }
 
+        .custom-wrong-input {
+            border: 1.5px solid red;
+        }
+
         .custom-select {
             width: 41.5rem;
             @media (max-width: 1000px) {
@@ -86,7 +90,7 @@ body {
             margin-left: 0;
         }
     }
-    
+
     .submit-btn {
         margin-left: 1.5rem;
         padding: 1rem 1.5rem;
@@ -100,8 +104,6 @@ body {
             background-color: rgb(95, 86, 86);
         }
     }
-
-    
 
 }
 
